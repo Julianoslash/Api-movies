@@ -64,4 +64,10 @@ public class MoviesController {
     public RatingsModel saveRating(@RequestBody RatingsModel rating){
         return ratingsRepository.save(rating);
     }
+
+    @DeleteMapping(path = "/api/ratings")
+    public void deleteRating(@RequestBody RatingsModel rating){
+        ratingsRepository.delete(rating);
+    }
+    git
 }
