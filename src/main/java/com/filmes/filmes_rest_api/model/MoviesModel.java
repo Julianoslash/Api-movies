@@ -21,6 +21,9 @@ public class MoviesModel {
     @Column(nullable = false, length = 250)
     public String info;
 
+    @Column(nullable = false)
+    public String image;
+
     public Integer getCod_movie() {
         return cod_movie;
     }
@@ -52,4 +55,9 @@ public class MoviesModel {
     public void setInfo(String info) {
         this.info = info;
     }
+
+    public String getImage(){ return image; }
+
+    public void setImage(String image){ this.image =image; }
+
 }
