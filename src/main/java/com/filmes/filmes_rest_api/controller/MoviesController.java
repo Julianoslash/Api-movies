@@ -69,5 +69,5 @@ public class MoviesController {
     public void deleteRating(@RequestBody RatingsModel rating){
         ratingsRepository.delete(rating);
     }
-    git
+    
 }
